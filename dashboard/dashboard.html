@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextHire AI Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/your-kit-id.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <h2>🚀 NextHire AI</h2>
+        </div>
+
+        <ul class="sidebar-menu">
+          <li class="active">
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+              Dashboard
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-chart-line"></i>
+              Progress
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-code"></i>
+              DSA Tracker
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-book"></i>
+              Roadmap
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-robot"></i>
+              AI Mentor
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-file"></i>
+              Resume Builder
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-briefcase"></i>
+              Jobs
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-microphone"></i>
+              Mock Interview
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-gear"></i>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Topbar -->
+        <div class="topbar">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search anything..." />
+          </div>
+
+          <div class="topbar-right">
+            <div class="notification">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <div class="profile">
+              <img src="https://i.pravatar.cc/45" alt="Profile" />
+
+              <div class="profile-info">
+                <h4>Abhishek</h4>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Welcome -->
+        <div class="welcome-section">
+          <div class="welcome-text">
+            <h1>Welcome Back, Abhishek 👋</h1>
+
+            <p>
+              Keep learning consistently. You're getting closer to your dream
+              Software Engineer job every day.
+            </p>
+          </div>
+
+          <button class="btn btn-primary">Continue Learning</button>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h2>92%</h2>
+            <p>Placement Readiness</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>245</h2>
+            <p>DSA Solved</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>18</h2>
+            <p>Mock Interviews</p>
+          </div>
+
+          <div class="stat-card">
+            <h2>21 Days</h2>
+            <p>Learning Streak</p>
+          </div>
+        </div>
+
+        <!-- Analytics -->
+        <div class="analytics">
+          <div class="chart-card">
+            <h3>Weekly Progress</h3>
+
+            <canvas id="progressChart"></canvas>
+          </div>
+
+          <div class="goal-card">
+            <h3>Today's Goal</h3>
+
+            <h2>6 / 8 Hours</h2>
+
+            <p>Complete DSA + Backend Practice</p>
+
+            <button class="btn btn-primary">Continue</button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

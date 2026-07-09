@@ -12,28 +12,34 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <div class="container">
           <div class="logo">
             <a href="index.html"><span>🚀 NextHire AI</span></a>
           </div>
 
-          <div class="nav-links">
-            <a href="#">Home</a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
 
-            <a href="#">Features</a>
+            <li><a href="#features">Features</a></li>
 
-            <a href="#">Roadmap</a>
+            <li><a href="#workflow">Workflow</a></li>
 
-            <a href="#">Testimonials</a>
+            <li><a href="#testimonials">Testimonials</a></li>
 
-            <a href="#">FAQ</a>
+            <li><a href="#faq">FAQ</a></li>
 
-            <a href="#">Contact</a>
-          </div>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="menu-toggle">☰</div>
 
           <div class="nav-buttons">
             <a href="#" class="login-btn">Login</a>
@@ -46,7 +52,7 @@
 
     <main>
       <!-- ================= HERO SECTION ================= -->
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="container">
           <div class="hero-content">
             <h1>Crack Your Dream Software Job with AI</h1>
@@ -84,6 +90,10 @@
             <div class="dashboard-preview">
               <div class="dashboard-header">
                 <h3>Dashboard</h3>
+                <div class="dashboard-icons">
+                  <span>🔔</span>
+                  <span>👤</span>
+                </div>
               </div>
               <div class="dashboard-cards">
                 <div class="dashboard-card">
@@ -110,6 +120,297 @@
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FEATURES SECTION ================= -->
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="section-title">...</div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🤖</div>
+
+              <h3>AI Mock Interview</h3>
+
+              <p>Practice real interviews with AI</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">💻</div>
+
+              <h3>DSA Practice</h3>
+
+              <p>Solve coding problems daily</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📄</div>
+
+              <h3>Resume Analyzer</h3>
+
+              <p>Improve your ATS score</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🧠</div>
+
+              <h3>Aptitude Test</h3>
+
+              <p>Practice Quant & Reasoning</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">📊</div>
+
+              <h3>Progress Tracking</h3>
+
+              <p>Monitor your preparation</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🏆</div>
+              <h3>Coding Contests</h3>
+
+              <p>Participate in weekly contests</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORKFLOW SECTION ================= -->
+
+      <section class="workflow" id="workflow">
+        <div class="container">
+          <div class="section-title">
+            <h2>How NextHire AI Works</h2>
+
+            <p>Prepare smarter with AI in just four simple steps.</p>
+          </div>
+
+          <div class="workflow-grid">
+            <div class="step-card">
+              <div class="step-number">01</div>
+
+              <h3>Create Account</h3>
+
+              <p>Sign up and create your personalized learning dashboard.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">02</div>
+
+              <h3>AI Mock Interview</h3>
+
+              <p>Practice mock interviews with AI feedback.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">03</div>
+
+              <h3>Practice Daily</h3>
+
+              <p>Solve DSA, Aptitude and CS Fundamentals every day.</p>
+            </div>
+
+            <div class="step-card">
+              <div class="step-number">04</div>
+
+              <h3>Get Your Dream Job</h3>
+
+              <p>Track progress and become interview ready.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS SECTION ================= -->
+
+      <section class="testimonials" id="testimonials">
+        <div class="container">
+          <div class="section-title">
+            <h2>What Our Students Say</h2>
+
+            <p>
+              Thousands of students trust NextHire AI to prepare for placements.
+            </p>
+            <div class="testimonials-grid">
+              <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p class="review">
+                  "NextHire AI completely changed my placement journey. The AI
+                  Mock Interviews helped me gain confidence."
+                </p>
+
+                <div class="student-info">
+                  <div class="student-image">👨</div>
+
+                  <div class="student-details">
+                    <h4>Rahul Sharma</h4>
+
+                    <span>Software Engineer @ Amazon</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p class="review">
+                  "The Resume Analyzer and AI Interview feature helped me
+                  improve my confidence before placement interviews."
+                </p>
+
+                <div class="student-info">
+                  <div class="student-image">👩</div>
+
+                  <div class="student-details">
+                    <h4>Priya Singh</h4>
+
+                    <span>SDE @ Microsoft</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+
+                <p class="review">
+                  "The daily DSA roadmap helped me stay disciplined and
+                  consistent throughout my placement preparation. Solving coding
+                  problems regularly, tracking my progress, and practicing mock
+                  interviews made me more confident and ultimately
+                  interview-ready."
+                </p>
+
+                <div class="student-info">
+                  <div class="student-image">👨</div>
+
+                  <div class="student-details">
+                    <h4>Abhishek Verma</h4>
+
+                    <span>Backend Developer @ Flipkart</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FAQ SECTION ================= -->
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+
+            <p>
+              Have questions? Here are some common queries about NextHire AI.
+            </p>
+            <div class="faq-container">
+              <!-- FAQ 1 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>What is NextHire AI?</h3>
+                  <span>+</span>
+                </div>
+
+                <div class="faq-answer">
+                  <p>
+                    NextHire AI is an AI-powered placement preparation platform
+                    designed to help students master DSA, aptitude, resume
+                    building, and AI mock interviews.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ 2 -->
+              <div class="faq-item">
+                <div class="faq-question">
+                  <h3>Is NextHire AI free to use?</h3>
+                  <span>+</span>
+                </div>
+
+                <div class="faq-answer">
+                  <p>
+                    Yes. The platform offers free learning resources, while
+                    premium features can be introduced in future versions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact Us</h2>
+
+            <p>
+              Have questions or want to collaborate? We'd love to hear from you.
+            </p>
+          </div>
+
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3>Let's Talk</h3>
+
+              <p class="contact-text">
+                We'd love to hear from you. Feel free to reach out for any
+                questions, feedback, or collaboration opportunities.
+              </p>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <span>support@nexthireai.com</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <span>+91 9876543210</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div class="contact-details">
+                  <h4>Location</h4>
+                  <span>Jabalpur, Madhya Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" />
+
+              <input type="email" placeholder="Your Email" />
+
+              <input type="text" placeholder="Subject" />
+
+              <textarea rows="6" placeholder="Your Message"></textarea>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </section>

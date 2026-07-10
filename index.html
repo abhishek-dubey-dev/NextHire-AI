@@ -42,9 +42,9 @@
           <div class="menu-toggle">☰</div>
 
           <div class="nav-buttons">
-            <a href="#" class="login-btn">Login</a>
+            <a href="dashboard/dashboard.html" class="login-btn">Login</a>
 
-            <a href="#" class="signup-btn">Sign Up</a>
+            <a href="dashboard/dashboard.html" class="signup-btn">Sign Up</a>
           </div>
         </div>
       </nav>
@@ -55,17 +55,25 @@
       <section class="hero" id="home">
         <div class="container">
           <div class="hero-content">
+            <div class="hero-badge">
+              <i class="fa-solid fa-sparkles"></i>
+              AI-powered placement prep for modern careers
+            </div>
             <h1>Crack Your Dream Software Job with AI</h1>
 
             <p>
-              Master DSA, Aptitude, Resume Building and Mock Interviews on one
-              modern platform.
+              Practice DSA, aptitude, resume building, and mock interviews on one polished platform built for real placement success.
             </p>
 
             <div class="hero-buttons">
-              <a href="#" class="btn btn-primary">Get Started</a>
+              <a href="dashboard/dashboard.html" class="btn btn-primary">Get Started</a>
 
-              <a href="#" class="btn btn-outline">Explore Features</a>
+              <a href="#features" class="btn btn-outline">Explore Features</a>
+            </div>
+
+            <div class="hero-badges">
+              <span><i class="fa-solid fa-check"></i> 10K+ learners</span>
+              <span><i class="fa-solid fa-check"></i> 95% success rate</span>
             </div>
 
             <div class="hero-stats">
@@ -87,7 +95,11 @@
           </div>
 
           <div class="hero-image">
-            <div class="dashboard-preview">
+            <a href="dashboard/dashboard.html" class="dashboard-preview" aria-label="Open the NextHire AI dashboard">
+              <div class="dashboard-preview-badge">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Click to open dashboard
+              </div>
               <div class="dashboard-header">
                 <h3>Dashboard</h3>
                 <div class="dashboard-icons">
@@ -119,7 +131,7 @@
                   <li>Update Resume</li>
                 </ul>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -128,7 +140,11 @@
 
       <section class="features" id="features">
         <div class="container">
-          <div class="section-title">...</div>
+          <div class="section-title">
+            <div class="section-badge">Core tools</div>
+            <h2>Everything You Need to Prepare</h2>
+            <p>From mock interviews to daily practice, all the tools for placement prep are in one place.</p>
+          </div>
 
           <div class="features-grid">
             <div class="feature-card">
@@ -181,6 +197,7 @@
       <section class="workflow" id="workflow">
         <div class="container">
           <div class="section-title">
+            <div class="section-badge">How it works</div>
             <h2>How NextHire AI Works</h2>
 
             <p>Prepare smarter with AI in just four simple steps.</p>
@@ -398,14 +415,16 @@
               </div>
             </div>
 
-            <form class="contact-form">
-              <input type="text" placeholder="Your Name" />
+            <form class="contact-form" id="contactForm">
+              <input type="text" placeholder="Your Name" required />
 
-              <input type="email" placeholder="Your Email" />
+              <input type="email" placeholder="Your Email" required />
 
-              <input type="text" placeholder="Subject" />
+              <input type="text" placeholder="Subject" required />
 
-              <textarea rows="6" placeholder="Your Message"></textarea>
+              <textarea rows="6" placeholder="Your Message" required></textarea>
+
+              <p class="form-message" id="formMessage" style="display: none"></p>
 
               <button type="submit" class="btn btn-primary">
                 Send Message
@@ -416,7 +435,49 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h3>NextHire AI</h3>
+            <p>Smart preparation for your dream software job with AI-guided practice, mock interviews, and progress tracking.</p>
+            <div class="social-links" aria-label="Social links">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#workflow">Workflow</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="mailto:support@nexthireai.com">support@nexthireai.com</a></li>
+              <li><a href="tel:+919876543210">+91 9876543210</a></li>
+              <li>Jabalpur, Madhya Pradesh</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 NextHire AI. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#home">Home</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Support</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
   </body>

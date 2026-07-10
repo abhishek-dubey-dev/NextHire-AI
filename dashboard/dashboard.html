@@ -13,10 +13,10 @@
       rel="stylesheet"
     />
 
-    <script
-      src="https://kit.fontawesome.com/your-kit-id.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="dashboard">
@@ -103,17 +103,75 @@
 
           <div class="topbar-right">
             <div class="notification">
-              <i class="fa-solid fa-bell"></i>
-            </div>
+                <i class="fa-solid fa-bell"></i>
 
-            <div class="profile">
-              <img src="https://i.pravatar.cc/45" alt="Profile" />
+  <span class="notification-count">3</span>
 
-              <div class="profile-info">
-                <h4>Abhishek</h4>
-                <span>Software Engineer</span>
-              </div>
-            </div>
+  <div class="notification-menu">
+
+    <h3>Notifications</h3>
+
+    <div class="notification-item">
+      <p>🎉 You solved 5 DSA problems today.</p>
+      <span>2 min ago</span>
+    </div>
+
+    <div class="notification-item">
+      <p>📄 Resume ATS Score increased to 92%.</p>
+      <span>1 hour ago</span>
+    </div>
+
+    <div class="notification-item">
+      <p>💼 New SDE Internship matches your profile.</p>
+      <span>Today</span>
+    </div>
+
+  </div>
+</div>
+
+<button id="theme-toggle" class="theme-btn">
+    <i class="fa-solid fa-moon"></i>
+</button>
+
+  <div class="profile">
+  <img src="https://i.pravatar.cc/45" alt="Profile" />
+
+  <div class="profile-info">
+    <h4>Abhishek</h4>
+    <span>Software Engineer</span>
+  </div>
+
+  <i class="fa-solid fa-chevron-down"></i>
+
+  <div class="profile-menu">
+
+    <a href="#">
+      <i class="fa-solid fa-user"></i>
+      My Profile
+    </a>
+
+    <a href="#">
+      <i class="fa-solid fa-gear"></i>
+      Settings
+    </a>
+
+    <a href="#">
+      <i class="fa-solid fa-file"></i>
+      Resume
+    </a>
+
+    <a href="#">
+      <i class="fa-solid fa-moon"></i>
+      Dark Mode
+    </a>
+
+    <a href="#">
+      <i class="fa-solid fa-right-from-bracket"></i>
+      Logout
+    </a>
+
+  </div>
+</div>
           </div>
         </div>
 
@@ -134,22 +192,23 @@
         <!-- Stats -->
         <div class="stats-grid">
           <div class="stat-card">
-            <h2>92%</h2>
+             <h2 class="counter" data-target="92">0</h2>
+            
             <p>Placement Readiness</p>
           </div>
 
           <div class="stat-card">
-            <h2>245</h2>
+           <h2 class="counter" data-target="245">0</h2>
             <p>DSA Solved</p>
           </div>
 
           <div class="stat-card">
-            <h2>18</h2>
+           <h2 class="counter" data-target="18">0</h2>
             <p>Mock Interviews</p>
           </div>
 
           <div class="stat-card">
-            <h2>21 Days</h2>
+         <h2 class="counter" data-target="21">0</h2>
             <p>Learning Streak</p>
           </div>
         </div>
@@ -172,8 +231,483 @@
             <button class="btn btn-primary">Continue</button>
           </div>
         </div>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+          <div class="progress-card">
+            <h3>Placement Readiness</h3>
+
+            <div class="progress-circle">
+              <span>92%</span>
+            </div>
+
+            <p>Excellent Performance 🚀</p>
+          </div>
+
+          <div class="progress-card">
+            <h3>DSA Progress</h3>
+
+            <div class="progress-circle">
+              <span>49%</span>
+            </div>
+
+            <p>245 / 500 Problems</p>
+          </div>
+
+          <div class="progress-card">
+            <h3>Web Development</h3>
+
+            <div class="progress-circle">
+              <span>68%</span>
+            </div>
+
+            <p>Backend + Frontend</p>
+          </div>
+
+          <div class="progress-card">
+            <h3>AI & ML</h3>
+
+            <div class="progress-circle">
+              <span>35%</span>
+            </div>
+
+            <p>Learning Phase</p>
+          </div>
+        </div>
+
+        <!-- Resume ATS Score -->
+
+        <div class="resume-section">
+          <div class="resume-card">
+            <h2>📄 Resume ATS Score</h2>
+
+            <div class="resume-score">
+              <div class="score-circle">
+                <span>87%</span>
+              </div>
+
+              <div class="score-details">
+                <h3>Excellent Resume</h3>
+
+                <p>Your resume is ATS friendly.</p>
+
+                <ul>
+                  <li>✅ Strong Skills</li>
+
+                  <li>✅ Good Projects</li>
+
+                  <li>⚠ Add More Keywords</li>
+
+                  <li>⚠ Improve Summary</li>
+                </ul>
+
+                <button class="btn btn-primary">Improve Resume</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+
+<div class="quick-actions">
+
+  <h2>⚡ Quick Actions</h2>
+
+  <div class="action-grid">
+
+    <div class="action-card">
+      <i class="fa-solid fa-code"></i>
+      <h3>Practice DSA</h3>
+      <p>Solve today's coding challenge.</p>
+    </div>
+
+    <div class="action-card">
+      <i class="fa-solid fa-file-lines"></i>
+      <h3>Update Resume</h3>
+      <p>Improve ATS score instantly.</p>
+    </div>
+
+    <div class="action-card">
+      <i class="fa-solid fa-briefcase"></i>
+      <h3>Apply Jobs</h3>
+      <p>Latest opportunities for you.</p>
+    </div>
+
+    <div class="action-card">
+      <i class="fa-solid fa-comments"></i>
+      <h3>Mock Interview</h3>
+      <p>Practice with AI Interviewer.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Learning Calendar -->
+
+<div class="calendar-section">
+
+  <h2>📅 Learning Activity</h2>
+
+  <div class="calendar-grid">
+
+    <div class="day active"></div>
+    <div class="day"></div>
+    <div class="day medium"></div>
+    <div class="day high"></div>
+    <div class="day active"></div>
+    <div class="day"></div>
+    <div class="day medium"></div>
+
+    <div class="day high"></div>
+    <div class="day active"></div>
+    <div class="day medium"></div>
+    <div class="day"></div>
+    <div class="day active"></div>
+    <div class="day high"></div>
+    <div class="day medium"></div>
+
+    <div class="day active"></div>
+    <div class="day"></div>
+    <div class="day high"></div>
+    <div class="day medium"></div>
+    <div class="day active"></div>
+    <div class="day"></div>
+    <div class="day high"></div>
+
+  </div>
+
+</div>
+
+<!-- Leaderboard -->
+
+<div class="leaderboard">
+
+  <h2>🏆 Weekly Leaderboard</h2>
+
+  <div class="leaderboard-list">
+
+    <div class="leader">
+      <span class="rank">🥇</span>
+
+      <div class="leader-info">
+        <h3>Abhishek Dubey</h3>
+        <p>325 Points</p>
+      </div>
+
+      <span class="badge">Level 8</span>
+    </div>
+
+    <div class="leader">
+      <span class="rank">🥈</span>
+
+      <div class="leader-info">
+        <h3>Rahul Sharma</h3>
+        <p>290 Points</p>
+      </div>
+
+      <span class="badge">Level 7</span>
+    </div>
+
+    <div class="leader">
+      <span class="rank">🥉</span>
+
+      <div class="leader-info">
+        <h3>Priya Singh</h3>
+        <p>260 Points</p>
+      </div>
+
+      <span class="badge">Level 6</span>
+    </div>
+
+  </div>
+
+</div>
+        <!-- Dashboard Bottom -->
+        <div class="dashboard-bottom">
+          <!-- Recent Activity -->
+          <div class="activity-section">
+            <h2>Recent Activity</h2>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <div class="activity-content">
+                <h4>Solved 5 DSA Problems</h4>
+                <p>2 hours ago</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fa-solid fa-file"></i>
+              </div>
+
+              <div class="activity-content">
+                <h4>Resume Updated</h4>
+                <p>Yesterday</p>
+              </div>
+            </div>
+
+            <div class="activity-card">
+              <div class="activity-icon">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+
+              <div class="activity-content">
+                <h4>AI Mentor Session Completed</h4>
+                <p>Today</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Readiness -->
+          <div class="company-readiness">
+            <h2>Company Readiness</h2>
+
+            <div class="company-card">
+              <div class="company-header">
+                <span>Google</span>
+                <span>82%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill google"></div>
+              </div>
+            </div>
+
+            <div class="company-card">
+              <div class="company-header">
+                <span>Amazon</span>
+                <span>76%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill amazon"></div>
+              </div>
+            </div>
+
+            <div class="company-card">
+              <div class="company-header">
+                <span>Microsoft</span>
+                <span>69%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill microsoft"></div>
+              </div>
+            </div>
+
+            <div class="company-card">
+              <div class="company-header">
+                <span>Flipkart</span>
+                <span>91%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill flipkart"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Smart Section -->
+        <div class="smart-section">
+          <!-- AI Mentor -->
+          <div class="ai-mentor">
+            <div class="mentor-header">
+              <i class="fa-solid fa-robot"></i>
+              <h2>AI Mentor</h2>
+            </div>
+
+            <p class="mentor-message">
+              👋 Good Morning, Abhishek!
+              <br /><br />
+              Based on your current progress, today's recommendation is:
+            </p>
+
+            <ul class="mentor-list">
+              <li>✅ Solve 2 Medium DSA Problems</li>
+              <li>✅ Complete Backend Authentication</li>
+              <li>✅ Revise DBMS for 30 Minutes</li>
+              <li>✅ Apply to 5 Companies</li>
+            </ul>
+
+            <button class="btn btn-primary">Ask AI Mentor</button>
+          </div>
+
+ <!-- Upcoming Interviews -->
+          <div class="interview-section">
+            <h2>Upcoming Interviews</h2>
+
+            <div class="interview-list">
+              <div class="interview-card">
+                <div>
+                  <h3>Google</h3>
+                  <p>Frontend Developer</p>
+                </div>
+
+                <span>12 July • 10:00 AM</span>
+              </div>
+
+              <div class="interview-card">
+                <div>
+                  <h3>Amazon</h3>
+                  <p>SDE Intern</p>
+                </div>
+
+                <span>15 July • 2:00 PM</span>
+              </div>
+
+              <div class="interview-card">
+                <div>
+                  <h3>Microsoft</h3>
+                  <p>Backend Engineer</p>
+                </div>
+
+                <span>20 July • 11:30 AM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+        </div>
+
+         
+
+     <div class="productivity-grid">
+
+    <div class="task-card">
+
+       <!-- Upcoming Tasks -->
+
+          <div class="task-card">
+            <h3>Today's Tasks</h3>
+
+            <ul class="task-list">
+              <li>
+                <input type="checkbox" />
+                Solve 5 DSA Questions
+              </li>
+
+              <li>
+                <input type="checkbox" />
+                Watch Backend Lecture
+              </li>
+
+              <li>
+                <input type="checkbox" />
+                Practice SQL
+              </li>
+
+              <li>
+                <input type="checkbox" />
+                Apply to 3 Companies
+              </li>
+            </ul>
+          </div>
+
+    </div>
+
+    <div class="company-section">
+
+          <!-- Dream Company Tracker -->
+
+          <div class="company-section">
+            <h2>🎯 Dream Company Tracker</h2>
+
+            <div class="company-grid">
+              <div class="company-card">
+                <h3>Google</h3>
+
+                <div class="company-progress">
+                  <div class="fill google"></div>
+                </div>
+
+                <p>80% Ready</p>
+              </div>
+
+              <div class="company-card">
+                <h3>Amazon</h3>
+
+                <div class="company-progress">
+                  <div class="fill amazon"></div>
+                </div>
+
+                <p>65% Ready</p>
+              </div>
+
+              <div class="company-card">
+                <h3>Microsoft</h3>
+
+                <div class="company-progress">
+                  <div class="fill microsoft"></div>
+                </div>
+
+                <p>52% Ready</p>
+              </div>
+
+              <div class="company-card">
+                <h3>Adobe</h3>
+
+                <div class="company-progress">
+                  <div class="fill adobe"></div>
+                </div>
+
+                <p>45% Ready</p>
+              </div>
+            </div>
+          </div>
+
+
+</div>
+          <!-- Job Application Tracker -->
+
+          <div class="job-tracker" >
+            <h2>💼 Job Application Tracker</h2>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Role</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Google</td>
+                  <td>SDE Intern</td>
+                  <td><span class="status interview">Interview</span></td>
+                </tr>
+
+                <tr>
+                  <td>Amazon</td>
+                  <td>SDE-1</td>
+                  <td><span class="status applied">Applied</span></td>
+                </tr>
+
+                <tr>
+                  <td>Microsoft</td>
+                  <td>Software Engineer</td>
+                  <td><span class="status rejected">Rejected</span></td>
+                </tr>
+
+                <tr>
+                  <td>Adobe</td>
+                  <td>Backend Intern</td>
+                  <td><span class="status selected">Selected</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </main>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="dashboard.js"></script>
   </body>

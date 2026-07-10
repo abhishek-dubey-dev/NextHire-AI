@@ -31,6 +31,11 @@ body {
   background: linear-gradient(180deg, #f8fbff 0%, #f4f8ff 100%);
   color: #0f172a;
   line-height: 1.6;
+  overflow-x: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 ::selection {
@@ -761,11 +766,15 @@ section {
 
 .menu-toggle {
   display: none;
-
-  font-size: 2rem;
-
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.35rem;
   cursor: pointer;
   color: var(--dark);
+  background: rgba(37, 99, 235, 0.08);
   transition: 0.3s ease;
 }
 
@@ -775,12 +784,13 @@ section {
 
 .nav-links.show {
   display: flex;
-
   flex-direction: column;
 }
 
 .menu-toggle.active {
   transform: rotate(90deg);
+  background: var(--primary);
+  color: #fff;
 }
 
 .contact {

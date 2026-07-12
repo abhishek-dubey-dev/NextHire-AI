@@ -84,7 +84,8 @@ const formMessage = document.getElementById("formMessage");
 if (contactForm && formMessage) {
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    formMessage.textContent = "Thanks! Your message has been received. We will contact you soon.";
+    formMessage.textContent =
+      "Thanks! Your message has been received. We will contact you soon.";
     formMessage.style.display = "block";
     formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
     contactForm.reset();

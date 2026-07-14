@@ -1,0 +1,137 @@
+/* ==========================================
+   RESUME BUILDER
+========================================== */
+
+.resume-builder{
+
+    padding:30px;
+
+    margin-left:280px;
+
+    background:#f8fafc;
+
+    min-height:100vh;
+
+}
+
+/* Header */
+
+.resume-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.resume-header h1{
+
+    font-size:34px;
+
+    color:#1e293b;
+
+}
+
+.resume-header p{
+
+    color:#64748b;
+
+    margin-top:6px;
+
+}
+
+.resume-actions{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+/* Layout */
+
+.resume-container{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap:30px;
+
+}
+
+/* Left */
+
+.resume-form{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.resume-form h2{
+
+    margin-bottom:25px;
+
+}
+
+/* Right */
+
+.resume-preview{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.paper{
+
+    width:100%;
+
+    max-width:800px;
+
+    min-height:1000px;
+
+    background:#fff;
+
+    padding:50px;
+
+    border-radius:10px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.paper h1{
+
+    color:#2563eb;
+
+    margin-bottom:8px;
+
+}
+
+.paper hr{
+
+    margin:20px 0;
+
+}
+
+.paper h3{
+
+    margin-top:25px;
+
+    margin-bottom:8px;
+
+    color:#1e293b;
+
+}

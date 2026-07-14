@@ -1,93 +1,39 @@
-const faqQuestions = document.querySelectorAll(".faq-question");
+const ctx = document.getElementById("progressChart");
 
-if (faqQuestions.length) {
-  faqQuestions.forEach(function (question) {
-    question.addEventListener("click", function () {
-      const answer = question.nextElementSibling;
-      const icon = question.querySelector("span");
-      const isOpen = answer.classList.contains("active");
+if (ctx) {
+  new Chart(ctx, {
+    type: "line",
 
-      faqQuestions.forEach(function (item) {
-        item.nextElementSibling.classList.remove("active");
-        const itemIcon = item.querySelector("span");
-        if (itemIcon) itemIcon.textContent = "+";
-      });
+    data: {
+      labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
 
-      if (!isOpen) {
-        answer.classList.add("active");
-        if (icon) icon.textContent = "−";
-      }
-    });
-  });
-}
+      datasets: [
+        {
+          label: "Study Hours",
 
-const navbar = document.querySelector(".navbar");
+          data: [2, 4, 3, 6, 5, 7, 8],
 
-if (navbar) {
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  });
-}
+          borderColor: "#2563eb",
 
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-const navItems = document.querySelectorAll(".nav-links a");
-const body = document.body;
+          backgroundColor: "rgba(37,99,235,.15)",
 
-function closeMobileMenu() {
-  if (!navLinks || !menuToggle) return;
-  navLinks.classList.remove("show");
-  menuToggle.classList.remove("active");
-  menuToggle.innerHTML = "☰";
-  navLinks.setAttribute("aria-expanded", "false");
-  body.classList.remove("menu-open");
-}
+          fill: true,
 
-function openMobileMenu() {
-  if (!navLinks || !menuToggle) return;
-  navLinks.classList.add("show");
-  menuToggle.classList.add("active");
-  menuToggle.innerHTML = "✖";
-  navLinks.setAttribute("aria-expanded", "true");
-  body.classList.add("menu-open");
-}
+          tension: 0.4,
+        },
+      ],
+    },
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener("click", function () {
-    if (navLinks.classList.contains("show")) {
-      closeMobileMenu();
-    } else {
-      openMobileMenu();
-    }
-  });
+    options: {
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
 
-  navItems.forEach(function (link) {
-    link.addEventListener("click", function () {
-      closeMobileMenu();
-    });
-  });
-}
+      responsive: true,
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 768) {
-    closeMobileMenu();
-  }
-});
-
-const contactForm = document.getElementById("contactForm");
-const formMessage = document.getElementById("formMessage");
-
-if (contactForm && formMessage) {
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    formMessage.textContent =
-      "Thanks! Your message has been received. We will contact you soon.";
-    formMessage.style.display = "block";
-    formMessage.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    contactForm.reset();
+      maintainAspectRatio: false,
+    },
   });
 }

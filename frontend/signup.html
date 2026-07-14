@@ -1,64 +1,224 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up | NextHire AI</title>
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/signup.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="auth-shell">
-      <div class="auth-card">
-        <div class="auth-header">
-          <a href="index.html" class="brand">🚀 NextHire AI</a>
-          <h1>Create your account</h1>
-          <p>Start preparing for internships and full-time roles.</p>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | NextHire AI</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<div class="auth-shell">
+
+    <!-- LEFT -->
+
+    <div class="auth-left">
+
+        <div class="left-content">
+
+            <h1>Start Your Dream Career 🚀</h1>
+
+            <p>
+
+                Join thousands of students preparing for top product-based companies with AI-powered learning.
+
+            </p>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                AI Career Mentor
+
+            </div>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Resume Builder
+
+            </div>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Dream Company Tracker
+
+            </div>
+
+            <div class="feature">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Mock Interviews
+
+            </div>
+
         </div>
 
-        <form class="auth-form" action="dashboard.html">
-          <label>
-            Full name
-            <input type="text" placeholder="Your name" required />
-          </label>
-
-          <label>
-            Email address
-            <input type="email" placeholder="you@example.com" required />
-          </label>
-
-          <label>
-            Password
-            <input type="password" placeholder="Create a password" required />
-          </label>
-
-          <label>
-            Confirm password
-            <input type="password" placeholder="Re-enter password" required />
-          </label>
-
-          <button type="submit">Create account</button>
-        </form>
-
-        <p class="auth-footer">
-          Already have an account?
-          <a href="login.html">Login</a>
-        </p>
-      </div>
     </div>
 
-    <script src="js/theme.js"></script>
-  </body>
+    <!-- RIGHT -->
+
+    <div class="auth-card">
+
+        <div class="auth-header">
+
+            <a href="index.html" class="brand">
+
+                🚀 NextHire AI
+
+            </a>
+
+            <h1>Create Account</h1>
+
+            <p>
+
+                Start your AI placement journey.
+
+            </p>
+
+        </div>
+
+        <form class="auth-form">
+
+            <label>
+
+                Full Name
+
+                <input type="text" placeholder="Abhishek Dubey" required>
+
+            </label>
+
+            <label>
+
+                Email
+
+                <input type="email" placeholder="you@example.com" required>
+
+            </label>
+
+            <label>
+
+                Password
+
+                <div class="password-box">
+
+                    <input
+                        id="password"
+                        type="password"
+                        placeholder="Create Password"
+                        required
+                    >
+
+                    <i class="fa-solid fa-eye" id="togglePassword"></i>
+
+                </div>
+
+            </label>
+
+            <!-- Password Strength -->
+
+            <div class="strength">
+
+                <div class="strength-bar">
+
+                    <div class="strength-fill"></div>
+
+                </div>
+
+                <small>Password Strength</small>
+
+            </div>
+
+            <label>
+
+                Confirm Password
+<p class="password-message"></p>
+                <div class="password-box">
+
+                    <input
+                        id="confirmPassword"
+                        type="password"
+                        placeholder="Confirm Password"
+                        required
+                    >
+
+                    <i class="fa-solid fa-eye" id="toggleConfirm"></i>
+
+                </div>
+
+            </label>
+
+            <label class="check-row">
+
+                <input type="checkbox" required>
+
+                I agree to the Terms & Conditions
+
+            </label>
+
+            <button class="login-btn">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <div class="divider">
+
+            <span>OR</span>
+
+        </div>
+
+        <button class="google-btn">
+
+            <i class="fa-brands fa-google"></i>
+
+            Continue with Google
+
+        </button>
+
+        <p class="auth-footer">
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="js/signup.js"></script>
+
+</body>
+
 </html>

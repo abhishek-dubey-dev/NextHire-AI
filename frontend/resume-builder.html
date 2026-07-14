@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextHire AI Dashboard</title>
+  
+  <link rel="stylesheet" href="css/variables.css">
+  
+<link rel="stylesheet" href="css/main.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/resume-builder.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="sidebar-overlay"></div>
+  <div class="dashboard">
+   <!-- Sidebar -->
+<aside class="sidebar">
+
+  <div class="sidebar-logo">
+
+    <a href="dashboard.html" class="sidebar-brand">
+
+      <span class="brand-icon">🚀</span>
+
+      <div>
+        <h2>NextHire AI</h2>
+        <small>Placement Platform</small>
+      </div>
+
+    </a>
+
+  </div>
+
+  <ul class="sidebar-menu">
+
+    <li class="menu-title">MAIN</li>
+
+    <li class="active">
+      <a href="#">
+        <i class="fa-solid fa-house"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>Analytics</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-list-check"></i>
+        <span>Study Planner</span>
+      </a>
+    </li>
+
+    <li class="menu-title">PLACEMENT</li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-code"></i>
+        <span>DSA Practice</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-brain"></i>
+        <span>Aptitude</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-file-lines"></i>
+        <span>Resume Builder</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-square-poll-horizontal"></i>
+        <span>ATS Checker</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-user-tie"></i>
+        <span>Mock Interview</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-robot"></i>
+        <span>AI Mentor</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-building"></i>
+        <span>Companies</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Job Tracker</span>
+      </a>
+    </li>
+
+    <li class="menu-title">ACCOUNT</li>
+
+    <li>
+      <a href="#">
+        <i class="fa-solid fa-gear"></i>
+        <span>Settings</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="index.html">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Logout</span>
+      </a>
+    </li>
+
+  </ul>
+
+</aside>
+    <!-- Main Content -->
+   <main class="resume-builder">
+
+    <!-- Header -->
+
+    <div class="resume-header">
+
+        <div>
+
+            <h1>Resume Builder</h1>
+
+            <p>Create an ATS-friendly professional resume.</p>
+
+        </div>
+
+        <div class="resume-actions">
+
+            <button class="btn btn-outline">
+                Preview
+            </button>
+
+            <button class="btn btn-primary">
+                Download PDF
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Content -->
+
+    <div class="resume-container">
+
+        <!-- Left -->
+
+        <div class="resume-form">
+
+            <h2>Personal Information</h2>
+
+            <!-- Form yaha aayega -->
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="resume-preview">
+
+            <div class="paper">
+
+                <h1>Abhishek Dubey</h1>
+
+                <p>Software Engineer</p>
+
+                <hr>
+
+                <h3>Education</h3>
+
+                <p>Your education will appear here.</p>
+
+                <h3>Projects</h3>
+
+                <p>Your projects will appear here.</p>
+
+                <h3>Skills</h3>
+
+                <p>Your skills will appear here.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+  <div class="toast" id="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/theme.js"></script>
+<script src="js/resume-builder.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+
+</html>
